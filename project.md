@@ -1,25 +1,31 @@
+### 1.1 Data Exploration
 
 ### 1.1 Data Ingestion & Modeling
-Load the CSV into a warehouse or database of your choice and build the core tables needed for
-analytics.
+- Load the CSV into bigquery 
+- build the core tables needed for analytics
+- pipeline should work as a daily batch process
+- Include basic tests or data quality assertions using Great Expectations
+#### Required Metrics (Daily / Weekly / Monthly)
+- Active Entity Growth Accounting
+- New Users — first-time actives in the period
+- Retained Users — active in both current and prior period
+- Resurrected Users — active now, inactive in prior period, but seen before
+- Churned Users — active in prior period but not current
+- cohort retention chart
+- Engagement depth (e.g. events per active user, session frequency)
+#### Bonus Metrics
+- Any additional metric you think tells an important story in this dataset
+#### 
 ### 1.2 Growth Accounting Dashboard
-Build a dashboard to track the following growth accounting metrics. You may use any BI tool or
-a standalone HTML/notebook output.
-Required Metrics (Daily / Weekly / Monthly)
+Build a dashboard to track the following growth accounting metrics. 
 
-● Active Entity Growth Accounting
-○ New Users — first-time actives in the period
-○ Retained Users — active in both current and prior period
-○ Resurrected Users — active now, inactive in prior period, but seen before
-○ Churned Users — active in prior period but not current
 
-Bonus Metrics
-● Triangle / cohort retention chart
-● Engagement depth (e.g. events per active user, session frequency)
-● Any additional metric you think tells an important story in this dataset
+
+
+
 1.3 Infrastructure & Code Quality
 ● Share everything via a public GitHub repo with a clear, self-contained README
-● Your pipeline should work as a daily batch process (or streaming if you prefer)
+● Your 
 ● Code should be readable, well-structured, and production-minded
 ● Include at least basic tests or data quality assertions
 ● Bonus: CI/CD pipeline, logging, dbt docs, or containerisation

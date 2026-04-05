@@ -209,3 +209,6 @@ __marimo__/
 # GCP credentials
 dwh/utils/.gcp_config.py
 dwh/utils/*.json
+
+# Claude Code
+.claude/
